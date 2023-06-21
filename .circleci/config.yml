@@ -1,15 +1,5 @@
 version: 2.1
 
-orbs:
-  node: circleci/node@4.7.0
-  heroku: circleci/heroku@1.2.6
-
-
-workflows: 
-  test-deploy:
-    jobs:
-      - test
-
 workflows: 
   version: 2
   commit-workflow: 
