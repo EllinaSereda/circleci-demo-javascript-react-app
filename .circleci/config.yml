@@ -2,9 +2,9 @@ version: 2.1
 
 workflows: 
   version: 2
-  # commit-workflow: 
-  #   jobs:
-  #     - test
+  commit-workflow: 
+    jobs:
+      - test
   schedule-workflow:
     triggers:
       - schedule:
