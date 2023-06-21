@@ -13,12 +13,12 @@ workflows:
 jobs:
   test:
     docker:
-      - image: cimg/node:17.2.0
+      - image: cimg/node:14.13.0
     steps: 
       - checkout
       - run:
           name: Install dependencies
-          command: yarn install
+          command: npm install
       - run:
           name: Running test
           command: npm run test
