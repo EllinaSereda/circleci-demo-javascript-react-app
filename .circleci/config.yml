@@ -5,16 +5,17 @@ workflows:
   commit-workflow: 
     jobs:
       - test
-  schedule-workflow:
-    triggers:
-      - schedule:
-          cron: "* * * * *"
-          filters: 
-            branches:
-              only: 
-                - master
-    jobs:
-      - test
+      - build
+  # schedule-workflow:
+  #   triggers:
+  #     - schedule:
+  #         cron: "* * * * *"
+  #         filters: 
+  #           branches:
+  #             only: 
+  #               - master
+  #   jobs:
+  #     - test
       
    
       
